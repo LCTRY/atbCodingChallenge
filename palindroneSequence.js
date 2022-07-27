@@ -1,5 +1,6 @@
 /**
- * Returns the closest palindrone to the string entered
+ * palindroneSequence
+ * Given a parameter returns the closest palindrone to the string entered, if a tie then returns the lower palindrone
  *
  * @param string or number.  string representing an integer 
  * @returns string. the closest integer (not including itself), which is a palindrome
@@ -27,14 +28,14 @@ const palindroneSequence = (input_string) => {
         currentNumber = inputNumber + searchIndex;
         isNumberPalindrone = isPalindrone(currentNumber);
         if (isNumberPalindrone) break;
-    } 
-    while (isNumberPalindrone === false);
+    } while (isNumberPalindrone === false);
 
     return currentNumber.toString();
 }
 
-/**
- * Returns true if number parameter is a palindrome. False if number parameter is not a palindrome
+/** 
+ * isPalindrone
+ * Checks a given parameter and returns true if a palindrome, false if not a palindrome
  *
  * @param number.  number which is being checked if it is a palindrome
  * @returns boolean. true if number is palindrome
