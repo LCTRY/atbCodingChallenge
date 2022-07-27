@@ -18,6 +18,7 @@ dependencies:
 1. Jest - used for unit testing of code. 
     run "npm i jest"
     to run test script "npm run test"
+    unit test file: palindroneSequence.test.js 
 
 functions: 
 1. palindroneSequence.js contains two functions: palindroneSequence, isPalindrone
