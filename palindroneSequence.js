@@ -12,7 +12,7 @@ const palindroneSequence = (input_string) => {
     var isNumberPalindrone = false;
 
     if (!input_string) return "Invalid input: please enter a value"
-    if (!/^-?[0-9]+$/.test(input_string)) return "Invalid input: String must contain only positive or negative integers";
+    if (!/^-?[0-9]+$/.test(input_string)) return "Invalid input: String must be an integer";
 
     var inputNumber = parseInt(input_string);
 
@@ -51,8 +51,8 @@ const isPalindrone = ((input_number) => {
         return true;
     } else {
         return false;
-    }
-})
+    };
+});
 
 module.exports = {
                     palindroneSequence,

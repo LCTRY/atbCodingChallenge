@@ -57,11 +57,11 @@ describe('Function test: palindroneSequence', () =>{
     });
     test ('#7 - non digits: input "-AB.CD123", expect "Invalid input message"', () => {
         let testInput = "-AB.CD123";
-        expect(palindroneSequence(testInput)).toBe("Invalid input: String must contain only positive or negative integers");
+        expect(palindroneSequence(testInput)).toBe("Invalid input: String must be an integer");
     });
     test ('#8 - non digits: input "-2-3", expect "Invalid input message"', () => {
         let testInput = "-AB.CD123";
-        expect(palindroneSequence(testInput)).toBe("Invalid input: String must contain only positive or negative integers");
+        expect(palindroneSequence(testInput)).toBe("Invalid input: String must be an integer");
     });
 });
 
